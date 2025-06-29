@@ -65,3 +65,98 @@ console.log(`Hiệu của ${m} và ${n} = ${m - n}`);
 console.log(`Tích của ${m} và ${n} = ${m * n}`);
 console.log(`Thương của ${m} và ${n} = ${m / n}`);
 console.log(`Chia lấy dư của ${m} và ${n} = ${m % n}`);
+
+/*
+// Ép kiểu dữ liệu
+let numA = prompt("nhập một số: ");
+console.log(typeof numA);
+let numB = 2;
+console.log(typeof numB);
+// cộng a và b
+let res = numA + numB;
+console.log(`${numA} + ${numB} = ${res}`); // result là một chuỗi (nối chuỗi), và chỉ thể hiện thông qua phép cộng
+console.log(typeof res);
+
+// Các phép tính khác Js sẽ cố gắng chuyển thành kiểu number trước khi thực hiện tính toán, nếu không chuyển được thì kết quả sẽ là NaN - not a number
+console.log(`${numA} - ${numB} = ${numA - numB}`);
+console.log(`${numA} * ${numB} = ${numA * numB}`);
+console.log(`${numA} / ${numB} = ${numA / numB}`);
+console.log(`${numA} % ${numB} = ${numA % numB}`);
+*/
+
+/*
+// ép kiểu dữ liệu nhập vào
+let numC = parseInt(prompt("Nhập vào một số C: "));
+let numD = parseFloat(prompt("Nhập vào một số D: "));
+let numE = Number(prompt("Nhập vào một số E: "));
+console.log(numC);
+console.log(numD);
+console.log(numE);
+console.log(typeof numC);
+console.log(typeof numD);
+console.log(typeof numE);
+*/
+
+// Gán giá trị
+let h = 10;
+let k = 2;
+console.log((h += k));
+console.log((h -= k));
+console.log((h *= k));
+console.log((h /= k));
+console.log((h %= k));
+
+// Toán tử tăng/giảm
+let o = 2;
+let p = 3;
+console.log(o++); // In o = 2 rồi mới tăng o lên 1, trả về giá trị cũ o = 2 (giá trị thật là o = 3)
+console.log(++o); // Tăng o lên 1 đơn vị (o = 4) rồi mới trả về giá trị mới o = 4
+
+// Biểu thức phức tạp
+// Độ ưu tiên (prefix -> các phép toán còn lại -> gán giá trị cho biến ở bên trái dấu bằng -> tính postfix)
+let _a = 2;
+let _b = 3;
+let _c = _a++ - ++_a + _b-- + ++_b + 2;
+console.log(
+  `Giá trị của biểu thức ${_a++} - ${++_a} + ${_b--} + ${++_b} + 2 = ${_c}`
+);
+
+
+/*
+// Tính chu vi, diện tích hình tròn
+let banKinhR = parseFloat(prompt("Nhập vào bán kính r: "));
+let chuViHT = 2 * Math.PI * banKinhR;
+let dienTichHT = Math.PI * Math.pow(banKinhR, 2);
+console.log(
+  `Hình tròn bán kính = ${banKinhR} có chu vi = ${chuViHT} và diện tích = ${dienTichHT}`
+);
+
+
+
+// Tính chu vi, diện tích hình chữ nhật
+let chieuDai = parseInt(prompt("Nhập vào chiều dài: "));
+let chieuRong = parseInt(prompt("Nhập vào chiều rộng: "));
+let chuVi = (chieuDai + chieuRong) * 2;
+let dienTich = chieuDai * chieuRong;
+console.log(
+  `Chu vi của hình chữ nhật có chiều dài ${chieuDai} và chiều rộng ${chieuRong} là ${chuVi}`
+);
+console.log(
+  `Diện tích của hình chữ nhật có chiều dài ${chieuDai} và chiều rộng ${chieuRong} là ${dienTich}`
+);
+
+
+
+// Tính điểm trung bình
+// Dùng toFixed(2) để làm tròn 2 chữ số sau dấu phẩy
+let toan = parseFloat(prompt("Nhập điểm toán: "));
+let van = parseFloat(prompt("Nhập điểm văn: "));
+let anh = parseFloat(prompt("Nhập điểm anh: "));
+let diemTB = (toan + van + anh) / 3;
+console.log(
+  `Điểm trung bình của 3 môn: toán = ${toan}, văn = ${van}, anh = ${anh} là ${diemTB.toFixed(
+    2
+  )}`
+);
+*/
+
