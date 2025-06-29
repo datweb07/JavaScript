@@ -121,7 +121,6 @@ console.log(
   `Giá trị của biểu thức ${_a++} - ${++_a} + ${_b--} + ${++_b} + 2 = ${_c}`
 );
 
-
 /*
 // Tính chu vi, diện tích hình tròn
 let banKinhR = parseFloat(prompt("Nhập vào bán kính r: "));
@@ -160,3 +159,34 @@ console.log(
 );
 */
 
+// So sánh
+// "==": không quan tâm đến kiểu dữ liệu, tức là có thể so sánh string vs number
+// "===": quan tâm đến kiểu dữ liệu, và không thể so sánh string vs number, return false
+// "!==" quan tâm đến kiểu dữ liệu
+let numOne = 1;
+let numTwo = 3;
+let numThree = "3";
+
+console.log(numOne === numTwo);
+
+// hàm isNan, Number
+// kiểu Number sẽ ép sang kiểu số, nếu không ép được sẽ return về NaN (not a number)
+let l = "abc";
+console.log(Number(l)); // result: NaN
+
+let isNum = 33;
+let notNum = "abc";
+console.log(isNaN(isNum)); // dùng hàm Number cố chuyển sang kiểu số, nếu không chuyển được thì là hàm "không phải là số", nhưng vì đây là số nên return về false
+console.log(isNaN(notNum)); // dùng hàm Number cố chuyển sang kiểu số, nhưng abc là string (not a number) nên return true
+
+// hàm random
+let random = Math.random();
+console.log(`Số ngẫu nhiên từ 0 đến sát 1 là ${random}`);
+
+// random lớn hơn 1
+let random2 = Math.random() * 10;
+console.log(`Số ngẫu nhiên từ 1 đến sát 10 là ${random2}`);
+
+// random số nguyên
+let random3 = parseInt(Math.random() * 10);
+console.log(`Số ngẫu nhiên (số nguyên) từ 1 đến sát 10 là ${random3}`);
