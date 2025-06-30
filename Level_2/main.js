@@ -110,4 +110,18 @@ while (m < 100) {
     break;
   }
 }
-console.log("Giá trị cuối cùng của m là: " + m);  // result m = 4
+console.log("Giá trị cuối cùng của m là: " + m); // result m = 4
+
+// Tính n!
+let v = 2;
+console.log(Number.isInteger(v)); // kiểm tra số nguyên
+
+let n = Number(prompt("Nhập vào số nguyên 0 âm: "));
+while (n % 1 !== 0 || n < 0) {
+  n = Number(prompt("Nhập lại n (số nguyên và 0 âm): "));
+}
+let gt = 1;
+for (let i = 1; i <= n; i++) {
+  gt *= i;
+}
+console.log(gt);
