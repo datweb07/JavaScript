@@ -1,6 +1,6 @@
 # JavaScript Learning Journey
 
-Repo này được mình chia theo từng cấp độ từ **cơ bản** đến **nâng cao**, bao gồm các chủ đề quan trọng trong JavaScript như:
+Repo này được chia theo từng cấp độ từ **cơ bản** đến **nâng cao**, bao gồm các chủ đề quan trọng trong JavaScript như:
 
 - Biến, kiểu dữ liệu
 - Câu lệnh điều kiện `if`, `switch`
