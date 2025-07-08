@@ -6,7 +6,7 @@ Repo này được chia theo từng cấp độ từ **cơ bản** đến **nân
 - Câu lệnh điều kiện `if`, `switch`
 - Vòng lặp `for`, `while`
 - Hàm và phạm vi (scope)
-- Các khái niệm nền tảng để làm việc với JavaScript hiện đại
+- Chuỗi `string`
 
 ## Cấu trúc thư mục
 
