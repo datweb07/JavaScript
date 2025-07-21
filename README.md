@@ -7,6 +7,7 @@ Repo này được chia theo từng cấp độ từ **cơ bản** đến **nân
 - Vòng lặp `for`, `while`
 - Hàm và phạm vi (scope)
 - Chuỗi `string`
+- `Date - time`
 
 ## Cấu trúc thư mục
 
